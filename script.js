@@ -9,3 +9,17 @@ const mobileNav = () => {
 };
 
 mobileMenu.addEventListener("click", mobileNav);
+
+const hideMobileMenu = () => {
+  const menu = document.querySelector(".is-active");
+  console.log("hidee");
+  if (window.innerWidth <= 980 && menu) {
+    menu.classList.toggle("is-active");
+    mobileMenu.classList.remove("active");
+    navbarContainer.classList.remove("active");
+  }
+};
+
+document
+  .querySelector(".navbar-links")
+  .addEventListener("click", hideMobileMenu);
