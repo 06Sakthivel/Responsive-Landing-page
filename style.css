@@ -54,6 +54,11 @@ html {
   justify-content: center;
   text-decoration: none;
   color: #fff;
+  transition: all 0.3s ease;
+}
+
+.navbar-links:hover {
+  border-bottom: 1px solid #fff;
 }
 
 /* Hero Section */
@@ -348,16 +353,25 @@ html {
   letter-spacing: 2px;
 }
 
-.section-intro a {
+.section-intro a:link,
+.section-intro a:visited {
   color: #fff;
   background-color: #131313;
   text-decoration: none;
   padding: 1.2rem 3.4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 300;
+  /* font-family: "Josefin Sans", sans-serif;
+  font-weight: 300; */
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.section-intro a:hover,
+.section-intro a:active {
+  color: #131313;
+  background-color: #fff;
+  border: 1px solid #131313;
 }
 
 .product-img-container {
@@ -503,6 +517,14 @@ html {
 .footer-menu {
   display: flex;
   gap: 1.5rem;
+}
+
+.footer-link {
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .footer-menu a {
